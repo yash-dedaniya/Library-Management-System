@@ -1,38 +1,26 @@
 package com.Library;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 
-/**
- * Unit test for simple App.
- */
+// Creating LibraryTest class for unit testing of the Library Class
 public class LibraryTest
-    extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public LibraryTest(String testName )
-    {
-        super( testName );
+    private Library library;
+
+    // Initializes a new Library object before each test with the help of @BeforeEach annotation of JUnit 5
+    @BeforeEach
+    void setUp(){
+        library = new Library();
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( LibraryTest.class );
+    // testAddBook is created for to test if a book can be successfully added to the library
+    void testAddBook(){
+        Book book = new Book("27102003","ABCD","Author1",2008);
+        library.addBook(book);
+
+        // testing addBook with false expected result and see that is it give error
+        Assertions.assertEquals(0,);
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }
