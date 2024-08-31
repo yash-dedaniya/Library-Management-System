@@ -16,8 +16,14 @@ public class Library
     }
 
     // For adding a book addBook method is created
-    public void addBook(Book book){
+    public boolean addBook(Book book){
+        for(Book b : books){
+            if(b.getIsbn().equals(book.getIsbn())){
+                return false;
+            }
+        }
         books.add(book);
+        return true;
     }
 
     public Book borrowBook(String isbn){

@@ -32,8 +32,17 @@ public class LibraryTest
         Assertions.assertEquals(book,library.getAvailableBooks().get(0));
         System.out.println("Test case need to run successfully");
         // it runs correctly as we gave 1 as expected result and its equal to actual result
-
-        //Test Case 3 : Testing Duplicate isbn book is added or not
     }
+
+    @Test
+    public void testAdBookWithDuplicateISBN(){
+        Book book1 = new Book("27102004","ADCB","Author2",2006);
+        Book book2 = new Book("27102004","ADCE","Author3",2007);
+        library.addBook(book1);
+
+        Assertions.assertFalse(library.addBook(book2));// Expecting false because isbn of book is same
+        System.out.println("Test Case run successfully because due to duplicate isbn book is not added");
+    }
+
 
 }
