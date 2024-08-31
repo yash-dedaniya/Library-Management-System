@@ -108,6 +108,8 @@ public class LibraryTest
         Assertions.assertTrue(library.getAvailableBooks().contains(book));
         System.out.println("Test case runs successfully and isAvailable is not modified");
     }
+
+    @Test
     void testGetAvailableBooks(){
         Book book1 = new Book("25052080","HLMN","Author10",2023);
         Book book2 = new Book("25052050","HKYN","Author11",2024);
