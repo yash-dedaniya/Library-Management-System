@@ -21,10 +21,19 @@ public class LibraryTest
         Book book = new Book("27102003","ABCD","Author1",2008);
         library.addBook(book);
 
-        // testing addBook with false expected result and see that is it give error
+        /*Test Case 1 : False expectation
         Assertions.assertEquals(0,library.getAvailableBooks().size());
-        // it gives an error because after adding a book actual result is 1 but we gave false value as 0 so our funaction works correct
+        it gives an error because after adding a book actual result is 1
+        but we gave false value as 0 so our function works correct
+         */
 
+        // Test Case 2 : True expectation
+        Assertions.assertEquals(1,library.getAvailableBooks().size());
+        Assertions.assertEquals(book,library.getAvailableBooks().get(0));
+        System.out.println("Test case need to run successfully");
+        // it runs correctly as we gave 1 as expected result and its equal to actual result
+
+        //Test Case 3 : Testing Duplicate isbn book is added or not
     }
 
 }
