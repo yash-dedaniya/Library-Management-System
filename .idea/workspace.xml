@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="25d1796c-a571-4361-a4da-5dba248b71c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Library/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/Library/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Library/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testAdBookWithDuplicateISBN">
+  <component name="RunManager" selected="JUnit.LibraryTest.testBorrowBook">
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagementSystem" />
       <extension name="coverage">
@@ -103,8 +102,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryTest.testBorrowBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.Library" />
+      <option name="MAIN_CLASS_NAME" value="com.Library.LibraryTest" />
+      <option name="METHOD_NAME" value="testBorrowBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testBorrowBook" />
         <item itemvalue="JUnit.LibraryTest.testAdBookWithDuplicateISBN" />
         <item itemvalue="JUnit.LibraryTest.testAddBook" />
         <item itemvalue="JUnit.LibraryTest" />

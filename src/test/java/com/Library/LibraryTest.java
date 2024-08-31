@@ -44,9 +44,18 @@ public class LibraryTest
         System.out.println("Test Case run successfully because due to duplicate isbn book is not added");
     }
 
+    @Test
     public void testBorrowBook(){
         Book book = new Book("27102003","XYZW","Author1",2002);
-        library.addBook()
+        library.addBook(book);
+
+        Book borrowedBook = library.borrowBook("27102003");
+        Assertions.assertNotNull(borrowedBook); // Test case run correctly if book with given ISBN was borrowed successfully
+
+        // if book is Borrowed then its isAvailable status is false which is checked by following Assertion
+        Assertions.assertFalse(borrowedBook.isAvailable());
+
+        System.out.println("Both results are matched and test case run successfully");
     }
 
 
