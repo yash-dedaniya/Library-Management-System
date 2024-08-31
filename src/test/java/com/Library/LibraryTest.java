@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 // Creating LibraryTest class for unit testing of the Library Class
 public class LibraryTest
 {
@@ -109,6 +111,7 @@ public class LibraryTest
         System.out.println("Test case runs successfully and isAvailable is not modified");
     }
 
+    // This test ensures that available books are correctly shown in list
     @Test
     void testGetAvailableBooks(){
         Book book1 = new Book("25052080","HLMN","Author10",2023);
@@ -128,5 +131,17 @@ public class LibraryTest
 
         // Check whether 2nd book has publication year 2020 according to created test case scenario
         Assertions.assertEquals(2020,library.getAvailableBooks().get(1).getPublicationYear());
+    }
+
+    // This test ensures that if library is empty menas has no books then getAvailableBooks returns empty list
+    @Test
+    void testGetAvailableBooksWhenLibraryIaEmpty(){
+
+        // Get the available books when the library is empty
+        List<Book> availableBooks = library.getAvailableBooks();
+
+        // Assert that the list of available books is empty
+        Assertions.assertTrue(availableBooks.isEmpty());
+        System.out.println("Test case run successfully it returns empty list");
     }
 }
