@@ -44,5 +44,10 @@ public class LibraryTest
         System.out.println("Test Case run successfully because due to duplicate isbn book is not added");
     }
 
+    public void testBorrowBook(){
+        Book book = new Book("27102003","XYZW","Author1",2002);
+        library.addBook()
+    }
+
 
 }
