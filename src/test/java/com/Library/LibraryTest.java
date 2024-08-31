@@ -23,6 +23,7 @@ public class LibraryTest
 
         /*Test Case 1 : False expectation
         Assertions.assertEquals(0,library.getAvailableBooks().size());
+
         it gives an error because after adding a book actual result is 1
         but we gave false value as 0 so our function works correct
          */
@@ -56,6 +57,22 @@ public class LibraryTest
         Assertions.assertFalse(borrowedBook.isAvailable());
 
         System.out.println("Both results are matched and test case run successfully");
+    }
+
+    @Test
+    public void testBorrowBookWhenIsAlreadyBorrowed(){
+        Book book = new Book("12345678","YASH","Author1",2009);
+        library.addBook(book);
+
+        // borrow the book once
+        library.borrowBook("12345678");
+
+        // Attempt to borrow the same book again
+        Book borrowedBook = library.borrowBook("12345678");
+
+        // assert that the borrowed book is null, indicating that the book is not available
+        Assertions.assertNull(borrowedBook);
+        System.out.println("Test Case run successfully");
     }
 
 
