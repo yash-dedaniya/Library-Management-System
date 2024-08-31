@@ -36,10 +36,12 @@ public class Book {
         return isAvailable;
     }
 
+    // borrow method make availability status as false after book borrowed by a user
     public void borrow(){
         isAvailable = false;
     }
 
+    // returnBook method make availability status of book as true after it has returned back
     public void returnBook(){
         isAvailable = true;
     }
