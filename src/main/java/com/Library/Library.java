@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Library
 {
-    private List<Book> books;
+    public List<Book> books;
 
     // Initializes the books list to an empty ArrayList when a new Library object is created
     public Library()

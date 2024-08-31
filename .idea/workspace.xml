@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25d1796c-a571-4361-a4da-5dba248b71c3" name="Changes" comment="" />
+    <list default="true" id="25d1796c-a571-4361-a4da-5dba248b71c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Library/LibraryManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Library/Library.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +55,20 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.LibraryTest">
+  <component name="RunManager" selected="Application.LibraryManagement">
+    <configuration name="LibraryManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Library.LibraryManagement" />
+      <module name="LibraryManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Library.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagementSystem" />
       <extension name="coverage">
@@ -99,22 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testReturnBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryManagementSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.Library.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.Library" />
-      <option name="MAIN_CLASS_NAME" value="com.Library.LibraryTest" />
-      <option name="METHOD_NAME" value="testReturnBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LibraryTest.testReturnBookWhenIsNotBorrowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryManagementSystem" />
       <extension name="coverage">
@@ -133,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LibraryManagement" />
         <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.testGetAvailableBooksWhenLibraryIaEmpty" />
         <item itemvalue="JUnit.LibraryTest.testGetAvailableBooks" />
         <item itemvalue="JUnit.LibraryTest.testReturnBookWhenIsNotBorrowed" />
-        <item itemvalue="JUnit.LibraryTest.testReturnBook" />
       </list>
     </recent_temporary>
   </component>
