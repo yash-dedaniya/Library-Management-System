@@ -36,7 +36,7 @@ public class LibraryTest
     }
 
     @Test
-    public void testAdBookWithDuplicateISBN(){
+    void testAdBookWithDuplicateISBN(){
         Book book1 = new Book("27102004","ADCB","Author2",2006);
         Book book2 = new Book("27102004","ADCE","Author3",2007);
         library.addBook(book1);
@@ -46,7 +46,7 @@ public class LibraryTest
     }
 
     @Test
-    public void testBorrowBook(){
+    void testBorrowBook(){
         Book book = new Book("27102003","XYZW","Author1",2002);
         library.addBook(book);
 
@@ -60,7 +60,7 @@ public class LibraryTest
     }
 
     @Test
-    public void testBorrowBookWhenIsAlreadyBorrowed(){
+    void testBorrowBookWhenIsAlreadyBorrowed(){
         Book book = new Book("12345678","YASH","Author1",2009);
         library.addBook(book);
 
@@ -75,5 +75,20 @@ public class LibraryTest
         System.out.println("Test Case run successfully");
     }
 
+    @Test
+    void testReturnBook(){
+        Book book = new Book("722077","PQRS","Author1",1999);
+        library.addBook(book);
+
+        // first borrow a that book so isAvailable set to false
+        library.borrowBook("722077");
+
+        // Return that book so isAvailable set to true
+        library.returnBook(book);
+
+        // checking that isAvailable set to true or not with following assertion
+        Assertions.assertTrue(book.isAvailable());
+        System.out.println("Test case run successfully");
+    }
 
 }
